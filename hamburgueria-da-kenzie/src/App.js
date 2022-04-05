@@ -67,13 +67,20 @@ function App() {
   function showProducts(filtrar) {
     setFiltered(true);
     const filtrados = products.filter((value) => {
-      if (value.category === filtrar) {
+      if (value.category.toLocaleLowerCase() === filtrar.toLocaleLowerCase()) {
         return value;
       }
     });
 
+    const filterName = products.filter((value) => {
+      if (value.name.toLocaleLowerCase() === filtrar.toLocaleLowerCase())
+        return value;
+    });
+
     if (filtrados.length > 0) {
       setFilteredProducts(filtrados);
+    } else if (filterName.length > 0) {
+      setFilteredProducts(filterName);
     } else {
       alert("não tem esse nome");
       setFilteredProducts(products);
