@@ -1,0 +1,44 @@
+.storeName {
+  text-align: center;
+}
+
+div.storeName span {
+  color: #eb5757;
+}
+
+.filtro {
+  width: 365px;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.filtro input {
+  width: 123px;
+  height: 19px;
+}
+
+.filtro button {
+  width: 107px;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: #27ae60;
+  color: white;
+}
+
+.filtro button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .storeName {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+}

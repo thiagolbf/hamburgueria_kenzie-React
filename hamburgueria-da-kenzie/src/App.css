@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .storeCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+@media (min-width: 1400px) {
+  .App .storeCart {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+  }
+}

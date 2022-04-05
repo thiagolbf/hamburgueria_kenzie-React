@@ -1,0 +1,23 @@
+.box {
+  height: 390px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 370px;
+}
+
+@media (min-width: 600px) {
+  .box {
+    height: auto;
+    overflow: hidden;
+    white-space: unset;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: auto;
+  }
+}
+
+/* overflow: auto;
+white-space: nowrap; */
